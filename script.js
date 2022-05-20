@@ -43,9 +43,14 @@
     async function predict() {
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
+        let tempCount=1;
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction =
-                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-            labelContainer.childNodes[i].innerHTML = classPrediction;
+                parseInt(prediction[i].probability.toFixed(2)*100);
+            
+            document.getElementById("bar-0" + tempCount).style.width = classPrediction + "%";
+            document.getElementById("bar-0" + tempCount).innerText = prediction[i].className + ": " + classPrediction + "%"
+            tempCount++;
         }
     }
+    

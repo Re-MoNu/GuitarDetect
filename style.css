@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body {
+  align-items: center;
+  background-image: url("/v3qT9H.jpeg");
+}
+#title {
+  color: yellow;
+  font-family: 'Bangers', cursive;
+  font-size: 72px;
+  margin: 0 auto;
+  width: fit-content;
+}
+#webcam-container {
+  margin: 0 auto;
+  padding: 100px;
+  width: fit-content;
+}
+
+#buttons {
+  margin: 0 auto;
+  width: 275px;
+  display: flex;
+  align-items: flex-end;
+  font-size: large;
+}
