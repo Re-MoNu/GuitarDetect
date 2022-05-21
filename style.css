@@ -2,7 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
   align-items: center;
-  background-image: url("/v3qT9H.jpeg");
+  background-image: url("/guitarbg.jpeg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -60px;
+  background-size: 70%;
+  background-color: rgb(244,233,151);
 }
 #title {
   color: yellow;
@@ -10,12 +15,12 @@ body {
   font-size: 72px;
   margin: 0 auto;
   width: fit-content;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 #webcam-container {
   margin: 0 auto;
   padding-bottom: 100px;
-  padding-top: 70px;
+  padding-top: 50px;
   width: fit-content;
 }
 canvas {
@@ -34,4 +39,9 @@ canvas {
   font-size: 36px;
   font-family: 'Press Start 2P', cursive;
   color: blueviolet;
+}
+#help-btn {
+  padding-top: 10px;
+  padding-left: 10px;
+  position: absolute;
 }

@@ -3,9 +3,10 @@
 
     // the link to your model provided by Teachable Machine export panel
     const URL = "https://teachablemachine.withgoogle.com/models/xgG82t4Zw/";
-
-    let model, webcam, labelContainer, maxPredictions;
-
+    function displayHelp() {
+        alert("Start 버튼을 눌러서 카메라를 켜주세요!");
+        alert("그다음 카메라에 기타를 비춰주시면 ai가 무슨 기타인지 알려드립니다!")
+    }
     // Load the image model and setup the webcam
     async function init() {
         const modelURL = URL + "model.json";
