@@ -53,12 +53,16 @@
             const classPrediction =
                 parseInt(prediction[i].probability.toFixed(2)*100);
             
+            //change fullness and name of progress bar
             document.getElementById("bar-0" + tempCount).style.width = classPrediction + "%";
             document.getElementById("bar-0" + tempCount).innerText = prediction[i].className + ": " + classPrediction + "%";
+            //if the current class probability is bigger than the last biggest one
             if(parseInt(prediction[i].probability.toFixed(2)*100) > guitarMuch+10){
+                //overwrite the biggest class number, and biggest probability count variables
                 guitarCount=i;
                 guitarMuch = parseInt(prediction[i].probability.toFixed(2)*100);
             }
+            //next bar
             tempCount++;
         }
         switch(parseInt(guitarCount)) {
@@ -76,4 +80,3 @@
                 break;
         }
     }
-//document.getElementById("thinkbox").innerText = "I think this is a(n) " + prediction[i].className + " Guitar!"
