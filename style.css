@@ -2,12 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
   align-items: center;
-  background-image: url("/guitarbg.jpeg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: -60px;
-  background-size: 70%;
-  background-color: rgb(244,233,151);
+  background-image: url("/v3qT9H.jpeg");
 }
 #title {
   color: yellow;
